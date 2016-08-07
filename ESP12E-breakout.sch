@@ -1,0 +1,767 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ESP8266
+LIBS:ESP12E-breakout-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP-12E U1
+U 1 1 56601FD6
+P 4500 1500
+F 0 "U1" H 4500 1400 50  0000 C CNN
+F 1 "ESP-12E" H 4500 1600 50  0000 C CNN
+F 2 "ESP8266:ESP-12E" H 4500 1500 50  0001 C CNN
+F 3 "" H 4500 1500 50  0001 C CNN
+	1    4500 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW1
+U 1 1 57A3538C
+P 3150 800
+F 0 "SW1" H 3300 910 50  0000 C CNN
+F 1 "RESET" H 3150 720 50  0000 C CNN
+F 2 "w_switch:PCB_PUSH" H 3150 800 60  0001 C CNN
+F 3 "" H 3150 800 60  0000 C CNN
+	1    3150 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 57A3562E
+P 5550 2000
+F 0 "#PWR01" H 5550 1750 50  0001 C CNN
+F 1 "GND" H 5550 1850 50  0000 C CNN
+F 2 "" H 5550 2000 60  0000 C CNN
+F 3 "" H 5550 2000 60  0000 C CNN
+	1    5550 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1300 3600 1300
+Wire Wire Line
+	3600 1400 3000 1400
+Wire Wire Line
+	3600 1500 3000 1500
+Wire Wire Line
+	3000 1600 3600 1600
+Wire Wire Line
+	3600 1700 3000 1700
+Wire Wire Line
+	3000 1800 3600 1800
+Wire Wire Line
+	3600 1900 3000 1900
+Wire Wire Line
+	5400 1200 5500 1200
+Wire Wire Line
+	5400 1300 5500 1300
+Wire Wire Line
+	5400 1400 5500 1400
+Wire Wire Line
+	5500 1500 5400 1500
+Wire Wire Line
+	5400 1600 6300 1600
+Wire Wire Line
+	5400 1800 5850 1800
+Wire Wire Line
+	5550 2000 5550 1900
+Text Label 3000 1900 0    60   ~ 0
+3V3
+$Comp
+L GND #PWR02
+U 1 1 57A35964
+P 2800 850
+F 0 "#PWR02" H 2800 600 50  0001 C CNN
+F 1 "GND" H 2800 700 50  0000 C CNN
+F 2 "" H 2800 850 60  0000 C CNN
+F 3 "" H 2800 850 60  0000 C CNN
+	1    2800 850 
+	1    0    0    -1  
+$EndComp
+Text Label 5500 1600 0    60   ~ 0
+0
+$Comp
+L SW_PUSH SW2
+U 1 1 57A35C9C
+P 6600 1600
+F 0 "SW2" H 6750 1710 50  0000 C CNN
+F 1 "SW_PUSH" H 6600 1520 50  0000 C CNN
+F 2 "w_switch:PCB_PUSH" H 6600 1600 60  0001 C CNN
+F 3 "" H 6600 1600 60  0000 C CNN
+	1    6600 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 57A35E85
+P 7050 1600
+F 0 "#PWR03" H 7050 1350 50  0001 C CNN
+F 1 "GND" H 7050 1450 50  0000 C CNN
+F 2 "" H 7050 1600 60  0000 C CNN
+F 3 "" H 7050 1600 60  0000 C CNN
+	1    7050 1600
+	1    0    0    -1  
+$EndComp
+Text Label 5500 1700 0    60   ~ 0
+2
+Text Label 5500 1800 0    60   ~ 0
+15
+$Comp
+L R R3
+U 1 1 57A366A5
+P 5750 1700
+F 0 "R3" V 5830 1700 50  0000 C CNN
+F 1 "10K" V 5750 1700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5680 1700 30  0001 C CNN
+F 3 "" H 5750 1700 30  0000 C CNN
+	1    5750 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 57A366E4
+P 6000 1800
+F 0 "R4" V 6080 1800 50  0000 C CNN
+F 1 "10K" V 6000 1800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5930 1800 30  0001 C CNN
+F 3 "" H 6000 1800 30  0000 C CNN
+	1    6000 1800
+	0    1    1    0   
+$EndComp
+Text Label 3000 1400 0    60   ~ 0
+CH_PD
+Text Label 6150 1700 0    60   ~ 0
+3V3
+$Comp
+L GND #PWR04
+U 1 1 57A36B14
+P 6300 1800
+F 0 "#PWR04" H 6300 1550 50  0001 C CNN
+F 1 "GND" H 6300 1650 50  0000 C CNN
+F 2 "" H 6300 1800 60  0000 C CNN
+F 3 "" H 6300 1800 60  0000 C CNN
+	1    6300 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1200 3600 1200
+Text Label 3000 1200 0    60   ~ 0
+RESET
+Text Label 3000 1300 0    60   ~ 0
+ADC
+Text Label 3000 1500 0    60   ~ 0
+16
+Text Label 3000 1600 0    60   ~ 0
+14
+Text Label 3000 1700 0    60   ~ 0
+12
+Text Label 3000 1800 0    60   ~ 0
+13
+Text Label 5500 1200 0    60   ~ 0
+TX
+Text Label 5500 1300 0    60   ~ 0
+RX
+Text Label 5500 1400 0    60   ~ 0
+5
+Text Label 5500 1500 0    60   ~ 0
+4
+Wire Wire Line
+	5550 1900 5400 1900
+NoConn ~ 4250 2400
+NoConn ~ 4350 2400
+NoConn ~ 4450 2400
+NoConn ~ 4550 2400
+NoConn ~ 4650 2400
+NoConn ~ 4750 2400
+$Comp
+L CONN_01X08 P?
+U 1 1 57A5C776
+P 2850 2750
+F 0 "P?" H 2850 3200 50  0000 C CNN
+F 1 "CONN_01X08" V 2950 2750 50  0000 C CNN
+F 2 "" H 2850 2750 60  0000 C CNN
+F 3 "" H 2850 2750 60  0000 C CNN
+	1    2850 2750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X08 P?
+U 1 1 57A5C7EF
+P 5350 2850
+F 0 "P?" H 5350 3300 50  0000 C CNN
+F 1 "CONN_01X08" V 5450 2850 50  0000 C CNN
+F 2 "" H 5350 2850 60  0000 C CNN
+F 3 "" H 5350 2850 60  0000 C CNN
+	1    5350 2850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 1800 6150 1800
+Wire Wire Line
+	5400 1700 5600 1700
+Wire Wire Line
+	6150 1700 5900 1700
+Wire Wire Line
+	6900 1600 7050 1600
+$Comp
+L BSS138 Q?
+U 1 1 57A5E824
+P 1400 2900
+F 0 "Q?" V 1600 2900 50  0000 L CNN
+F 1 "BSS138" V 1700 2800 50  0000 L CNN
+F 2 "~" H 1600 2825 50  0000 L CIN
+F 3 "" H 1400 2900 50  0000 L CNN
+	1    1400 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	800  3000 1200 3000
+Wire Wire Line
+	1600 3000 1900 3000
+$Comp
+L R R?
+U 1 1 57A5EDB5
+P 1100 2750
+F 0 "R?" V 1180 2750 50  0000 C CNN
+F 1 "10K" V 1100 2750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1030 2750 30  0001 C CNN
+F 3 "" H 1100 2750 30  0000 C CNN
+	1    1100 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1100 2900 1100 3000
+Connection ~ 1100 3000
+Wire Wire Line
+	1350 2550 1350 2700
+Wire Wire Line
+	850  2550 1350 2550
+Wire Wire Line
+	1100 2600 1100 2550
+Connection ~ 1100 2550
+$Comp
+L R R?
+U 1 1 57A5EF3E
+P 1650 2750
+F 0 "R?" V 1730 2750 50  0000 C CNN
+F 1 "10K" V 1650 2750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1580 2750 30  0001 C CNN
+F 3 "" H 1650 2750 30  0000 C CNN
+	1    1650 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1650 2900 1650 3000
+Connection ~ 1650 3000
+Wire Wire Line
+	1650 2600 1650 2550
+Wire Wire Line
+	1650 2550 1900 2550
+Text Label 850  2550 0    60   ~ 0
+3V3
+Text Label 1900 2550 0    60   ~ 0
+5V
+Text Label 1900 3000 0    60   ~ 0
+CH_PD_HV
+$Comp
+L BSS138 Q?
+U 1 1 57A5FE21
+P 1250 1000
+F 0 "Q?" V 1450 950 50  0000 L CNN
+F 1 "BSS138" V 1550 850 50  0000 L CNN
+F 2 "~" H 1450 925 50  0000 L CIN
+F 3 "" H 1250 1000 50  0000 L CNN
+	1    1250 1000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	650  1100 1050 1100
+Wire Wire Line
+	1450 1100 1750 1100
+$Comp
+L R R?
+U 1 1 57A5FE2B
+P 950 850
+F 0 "R?" V 1030 850 50  0000 C CNN
+F 1 "10K" V 950 850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 880 850 30  0001 C CNN
+F 3 "" H 950 850 30  0000 C CNN
+	1    950  850 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	950  1000 950  1100
+Connection ~ 950  1100
+Wire Wire Line
+	1200 650  1200 800 
+Wire Wire Line
+	700  650  1200 650 
+Wire Wire Line
+	950  700  950  650 
+Connection ~ 950  650 
+$Comp
+L R R?
+U 1 1 57A5FE38
+P 1500 850
+F 0 "R?" V 1580 850 50  0000 C CNN
+F 1 "10K" V 1500 850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1430 850 30  0001 C CNN
+F 3 "" H 1500 850 30  0000 C CNN
+	1    1500 850 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1500 1000 1500 1100
+Connection ~ 1500 1100
+Wire Wire Line
+	1500 700  1500 650 
+Wire Wire Line
+	1500 650  1750 650 
+Text Label 700  650  0    60   ~ 0
+3V3
+Text Label 1750 650  0    60   ~ 0
+5V
+Text Label 1750 1100 0    60   ~ 0
+RESET_HV
+Text Label 650  1100 0    60   ~ 0
+RESET
+Wire Wire Line
+	2800 850  2800 800 
+Wire Wire Line
+	2800 800  2850 800 
+Wire Wire Line
+	3450 800  3500 800 
+Wire Wire Line
+	3500 800  3500 1200
+Connection ~ 3500 1200
+$Comp
+L R R?
+U 1 1 57A60851
+P 1250 1700
+F 0 "R?" V 1330 1700 50  0000 C CNN
+F 1 "10K" V 1250 1700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1180 1700 30  0001 C CNN
+F 3 "" H 1250 1700 30  0000 C CNN
+	1    1250 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 57A608D8
+P 1250 2100
+F 0 "R?" V 1330 2100 50  0000 C CNN
+F 1 "2.2K" V 1250 2100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1180 2100 30  0001 C CNN
+F 3 "" H 1250 2100 30  0000 C CNN
+	1    1250 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57A60C10
+P 1250 2300
+F 0 "#PWR?" H 1250 2050 50  0001 C CNN
+F 1 "GND" H 1250 2150 50  0000 C CNN
+F 2 "" H 1250 2300 60  0000 C CNN
+F 3 "" H 1250 2300 60  0000 C CNN
+	1    1250 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 2250 1250 2300
+Wire Wire Line
+	1250 1850 1250 1950
+Wire Wire Line
+	1250 1550 800  1550
+Text Label 800  1550 0    60   ~ 0
+ADC_HV
+Wire Wire Line
+	1250 1900 1450 1900
+Connection ~ 1250 1900
+Text Label 1450 1900 0    60   ~ 0
+ADC
+Text Label 800  3000 0    60   ~ 0
+CH_PD
+$Comp
+L BSS138 Q?
+U 1 1 57A62D26
+P 1400 3600
+F 0 "Q?" V 1600 3600 50  0000 L CNN
+F 1 "BSS138" V 1700 3500 50  0000 L CNN
+F 2 "~" H 1600 3525 50  0000 L CIN
+F 3 "" H 1400 3600 50  0000 L CNN
+	1    1400 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	850  3700 1200 3700
+Wire Wire Line
+	1600 3700 1900 3700
+$Comp
+L R R?
+U 1 1 57A62D30
+P 1100 3450
+F 0 "R?" V 1180 3450 50  0000 C CNN
+F 1 "10K" V 1100 3450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1030 3450 30  0001 C CNN
+F 3 "" H 1100 3450 30  0000 C CNN
+	1    1100 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1100 3600 1100 3700
+Connection ~ 1100 3700
+Wire Wire Line
+	1350 3250 1350 3400
+Wire Wire Line
+	850  3250 1350 3250
+Wire Wire Line
+	1100 3300 1100 3250
+Connection ~ 1100 3250
+$Comp
+L R R?
+U 1 1 57A62D3D
+P 1650 3450
+F 0 "R?" V 1730 3450 50  0000 C CNN
+F 1 "10K" V 1650 3450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1580 3450 30  0001 C CNN
+F 3 "" H 1650 3450 30  0000 C CNN
+	1    1650 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1650 3600 1650 3700
+Connection ~ 1650 3700
+Wire Wire Line
+	1650 3300 1650 3250
+Wire Wire Line
+	1650 3250 1900 3250
+Text Label 850  3250 0    60   ~ 0
+3V3
+Text Label 1900 3250 0    60   ~ 0
+5V
+Text Label 1900 3700 0    60   ~ 0
+16_HV
+Text Label 850  3700 0    60   ~ 0
+16
+$Comp
+L BSS138 Q?
+U 1 1 57A63772
+P 1400 4350
+F 0 "Q?" V 1600 4350 50  0000 L CNN
+F 1 "BSS138" V 1700 4250 50  0000 L CNN
+F 2 "~" H 1600 4275 50  0000 L CIN
+F 3 "" H 1400 4350 50  0000 L CNN
+	1    1400 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	850  4450 1200 4450
+Wire Wire Line
+	1600 4450 1900 4450
+$Comp
+L R R?
+U 1 1 57A6377C
+P 1100 4200
+F 0 "R?" V 1180 4200 50  0000 C CNN
+F 1 "10K" V 1100 4200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1030 4200 30  0001 C CNN
+F 3 "" H 1100 4200 30  0000 C CNN
+	1    1100 4200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1100 4350 1100 4450
+Connection ~ 1100 4450
+Wire Wire Line
+	1350 4000 1350 4150
+Wire Wire Line
+	850  4000 1350 4000
+Wire Wire Line
+	1100 4050 1100 4000
+Connection ~ 1100 4000
+$Comp
+L R R?
+U 1 1 57A63789
+P 1650 4200
+F 0 "R?" V 1730 4200 50  0000 C CNN
+F 1 "10K" V 1650 4200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1580 4200 30  0001 C CNN
+F 3 "" H 1650 4200 30  0000 C CNN
+	1    1650 4200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1650 4350 1650 4450
+Connection ~ 1650 4450
+Wire Wire Line
+	1650 4050 1650 4000
+Wire Wire Line
+	1650 4000 1900 4000
+Text Label 850  4000 0    60   ~ 0
+3V3
+Text Label 1900 4000 0    60   ~ 0
+5V
+Text Label 1900 4450 0    60   ~ 0
+14_HV
+Text Label 850  4450 0    60   ~ 0
+14
+$Comp
+L BSS138 Q?
+U 1 1 57A63E08
+P 1400 5100
+F 0 "Q?" V 1600 5100 50  0000 L CNN
+F 1 "BSS138" V 1700 5000 50  0000 L CNN
+F 2 "~" H 1600 5025 50  0000 L CIN
+F 3 "" H 1400 5100 50  0000 L CNN
+	1    1400 5100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	850  5200 1200 5200
+Wire Wire Line
+	1600 5200 1900 5200
+$Comp
+L R R?
+U 1 1 57A63E12
+P 1100 4950
+F 0 "R?" V 1180 4950 50  0000 C CNN
+F 1 "10K" V 1100 4950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1030 4950 30  0001 C CNN
+F 3 "" H 1100 4950 30  0000 C CNN
+	1    1100 4950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1100 5100 1100 5200
+Connection ~ 1100 5200
+Wire Wire Line
+	1350 4750 1350 4900
+Wire Wire Line
+	850  4750 1350 4750
+Wire Wire Line
+	1100 4800 1100 4750
+Connection ~ 1100 4750
+$Comp
+L R R?
+U 1 1 57A63E1F
+P 1650 4950
+F 0 "R?" V 1730 4950 50  0000 C CNN
+F 1 "10K" V 1650 4950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1580 4950 30  0001 C CNN
+F 3 "" H 1650 4950 30  0000 C CNN
+	1    1650 4950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1650 5100 1650 5200
+Connection ~ 1650 5200
+Wire Wire Line
+	1650 4800 1650 4750
+Wire Wire Line
+	1650 4750 1900 4750
+Text Label 850  4750 0    60   ~ 0
+3V3
+Text Label 1900 4750 0    60   ~ 0
+5V
+Text Label 1900 5200 0    60   ~ 0
+12_HV
+Text Label 850  5200 0    60   ~ 0
+12
+$Comp
+L BSS138 Q?
+U 1 1 57A6479B
+P 1400 5800
+F 0 "Q?" V 1600 5800 50  0000 L CNN
+F 1 "BSS138" V 1700 5700 50  0000 L CNN
+F 2 "~" H 1600 5725 50  0000 L CIN
+F 3 "" H 1400 5800 50  0000 L CNN
+	1    1400 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	850  5900 1200 5900
+Wire Wire Line
+	1600 5900 1900 5900
+$Comp
+L R R?
+U 1 1 57A647A5
+P 1100 5650
+F 0 "R?" V 1180 5650 50  0000 C CNN
+F 1 "10K" V 1100 5650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1030 5650 30  0001 C CNN
+F 3 "" H 1100 5650 30  0000 C CNN
+	1    1100 5650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1100 5800 1100 5900
+Connection ~ 1100 5900
+Wire Wire Line
+	1350 5450 1350 5600
+Wire Wire Line
+	850  5450 1350 5450
+Wire Wire Line
+	1100 5500 1100 5450
+Connection ~ 1100 5450
+$Comp
+L R R?
+U 1 1 57A647B2
+P 1650 5650
+F 0 "R?" V 1730 5650 50  0000 C CNN
+F 1 "10K" V 1650 5650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1580 5650 30  0001 C CNN
+F 3 "" H 1650 5650 30  0000 C CNN
+	1    1650 5650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1650 5800 1650 5900
+Connection ~ 1650 5900
+Wire Wire Line
+	1650 5500 1650 5450
+Wire Wire Line
+	1650 5450 1900 5450
+Text Label 850  5450 0    60   ~ 0
+3V3
+Text Label 1900 5450 0    60   ~ 0
+5V
+Text Label 1900 5900 0    60   ~ 0
+13_HV
+Text Label 850  5900 0    60   ~ 0
+13
+Wire Wire Line
+	3050 2400 3150 2400
+Wire Wire Line
+	3150 2500 3050 2500
+Wire Wire Line
+	3150 2600 3050 2600
+Wire Wire Line
+	3150 2700 3050 2700
+Wire Wire Line
+	3150 2800 3050 2800
+Wire Wire Line
+	3150 2900 3050 2900
+Wire Wire Line
+	3150 3000 3050 3000
+Wire Wire Line
+	3150 3100 3050 3100
+Text Label 3150 2400 0    60   ~ 0
+RESET_HV
+Text Label 3150 2600 0    60   ~ 0
+CH_PD_HV
+Text Label 3150 2700 0    60   ~ 0
+16_HV
+Text Label 3150 2800 0    60   ~ 0
+14_HV
+Text Label 3150 2900 0    60   ~ 0
+12_HV
+Text Label 3150 3000 0    60   ~ 0
+13_HV
+Text Label 3150 2500 0    60   ~ 0
+ADC_HV
+Text Label 3150 3100 0    60   ~ 0
+3V3
+$Comp
+L BSS138 Q?
+U 1 1 57A68C7F
+P 8400 1200
+F 0 "Q?" V 8600 1200 50  0000 L CNN
+F 1 "BSS138" V 8700 1100 50  0000 L CNN
+F 2 "~" H 8600 1125 50  0000 L CIN
+F 3 "" H 8400 1200 50  0000 L CNN
+	1    8400 1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7850 1300 8200 1300
+Wire Wire Line
+	8600 1300 8900 1300
+$Comp
+L R R?
+U 1 1 57A68C87
+P 8100 1050
+F 0 "R?" V 8180 1050 50  0000 C CNN
+F 1 "10K" V 8100 1050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8030 1050 30  0001 C CNN
+F 3 "" H 8100 1050 30  0000 C CNN
+	1    8100 1050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8100 1200 8100 1300
+Connection ~ 8100 1300
+Wire Wire Line
+	8350 850  8350 1000
+Wire Wire Line
+	7850 850  8350 850 
+Wire Wire Line
+	8100 900  8100 850 
+Connection ~ 8100 850 
+$Comp
+L R R?
+U 1 1 57A68C93
+P 8650 1050
+F 0 "R?" V 8730 1050 50  0000 C CNN
+F 1 "10K" V 8650 1050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8580 1050 30  0001 C CNN
+F 3 "" H 8650 1050 30  0000 C CNN
+	1    8650 1050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8650 1200 8650 1300
+Connection ~ 8650 1300
+Wire Wire Line
+	8650 900  8650 850 
+Wire Wire Line
+	8650 850  8900 850 
+Text Label 7850 850  0    60   ~ 0
+3V3
+Text Label 8900 850  0    60   ~ 0
+5V
+Text Label 8900 1300 0    60   ~ 0
+16_HV
+Text Label 7850 1300 0    60   ~ 0
+16
+$EndSCHEMATC
