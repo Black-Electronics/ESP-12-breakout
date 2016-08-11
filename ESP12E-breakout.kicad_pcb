@@ -226,7 +226,7 @@
       (net 15 /RX))
     (pad 22 smd oval (at 16 0 180) (size 2.4 1.1) (layers B.Cu B.Paste B.Mask)
       (net 14 /TX))
-    (model walter/ESP8266.3dshapes/ESP-12aaa.wrl
+    (model walter/ESP8266.3dshapes/ESP-12.wrl
       (at (xyz 0.03 0 0))
       (scale (xyz 0.4 0.4 0.2))
       (rotate (xyz 0 0 0))
@@ -278,7 +278,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0805 (layer B.Cu) (tedit 57A814FE) (tstamp 57A6CFF9)
+  (module Capacitors_SMD:C_0805 (layer B.Cu) (tedit 57AC4054) (tstamp 57A6CFF9)
     (at 170.688 74.93 180)
     (descr "Capacitor SMD 0805, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0805")
@@ -287,7 +287,7 @@
     (fp_text reference C1 (at 0 1.778 180) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 10uF (at 0 -1.524 180) (layer B.SilkS)
+    (fp_text value 10uF (at 0 1.524 180) (layer B.SilkS)
       (effects (font (size 0.5 0.5) (thickness 0.125)) (justify mirror))
     )
     (fp_line (start -1.8 1) (end 1.8 1) (layer B.CrtYd) (width 0.05))
@@ -336,7 +336,7 @@
     )
   )
 
-  (module TO_SOT_Packages_SMD:SOT-223_edit locked (layer B.Cu) (tedit 57A9A432) (tstamp 57A8221C)
+  (module TO_SOT_Packages_SMD:SOT-223_edit locked (layer B.Cu) (tedit 57AC4049) (tstamp 57A8221C)
     (at 179.07 73.66 180)
     (descr "module CMS SOT223 4 pins")
     (tags "CMS SOT")
@@ -345,7 +345,7 @@
     (fp_text reference U2 (at 0 0.762 180) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value AP1117 (at -0.508 -0.762 180) (layer B.SilkS)
+    (fp_text value AP1117 (at 0.127 -0.254 180) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start -3.556 -1.524) (end -3.556 -4.572) (layer B.SilkS) (width 0.15))
